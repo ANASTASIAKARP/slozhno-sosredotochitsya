@@ -9,4 +9,37 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --color-title: #ffc2e6; /*цвет заголовка*/
+  --color-subtitle: #353430; /*цвет подзаголовка и названия колонок "многозадачность"*/
+  --text-color: #353430; /*основной цвет*/
+  --accent-color: #ff8dcb; /*акцентный цвет, заголовок секции "почему сосредоточиться сложно" и слова-ссылки */
+  --font-family: "IBM Plex Mono"; /* шрифт*/
+  --bg-color: #fff1f7; /*цвет фона*/
+  --main-font-weight: 400; /*основная толщина шрифта*/
+  --title-font-weight: 700; /*заголовок толщина шрифта*/
+  --title-font-size: 157px; /*размер шрифта но нужен ли из-за формулы?*/
+  --main-font-size: 18px; /*размер шрифта*/
+  --color_hover: rgb(50, 49, 45, 0.4);
+  --background-photo: url(../images/cover-image-light.png);
+  --display_rec: none;
+  --decor-color: #353430; /* rec и уголки*/ /*день,авто,неон*/ /*название у колонок */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-title: #ffc2e6; /*цвет заголовка*/
+    --color-subtitle: #353430; /*цвет подзаголовка и названия колонок "многозадачность"*/
+    --text-color: #353430; /*основной цвет*/
+    --accent-color: #ff8dcb; /*акцентный цвет, заголовок секции "почему сосредоточиться сложно" и слова-ссылки */
+    --font-family: "IBM Plex Mono"; /* шрифт*/
+    --bg-color: #fff1f7; /*цвет фона*/
+    --main-font-weight: 400; /*основная толщина шрифта*/
+    --title-font-weight: 700; /*заголовок толщина шрифта*/
+    --title-font-size: 157px; /*размер шрифта но нужен ли из-за формулы?*/
+    --main-font-size: 18px; /*размер шрифта*/
+    --color_hover: rgb(50, 49, 45, 0.4);
+    --background-photo: url(../images/cover-image-light.png);
+    --display_rec: none;
+    --decor-color: #353430; /* rec и уголки*/ /*день,авто,неон*/ /*название у колонок */
+  }
 }
