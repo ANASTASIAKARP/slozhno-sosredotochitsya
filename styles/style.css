@@ -60,9 +60,9 @@
   text-transform: uppercase;
   font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
-  line-height: 139%; 
+  line-height: 139%;
   top: 20px;
-  right: 48px; 
+  right: 48px;
   position: absolute;
   color: var(--decor-color);
   display: var(--display-rec);
@@ -80,9 +80,7 @@
   inline-size: 9px;
   block-size: 9px;
   display: var(--display-rec);
-  
-} 
-
+}
 
 /*секция день/авто/неон*/
 .header__theme-menu-list {
@@ -130,8 +128,6 @@
   pointer-events: none;
   border: 1px solid var(--decor-color);
 }
-
-
 
 /*заголовок no focus в header*/
 .title {
@@ -295,7 +291,7 @@
 .style_image {
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 /*закат над водой*/
@@ -332,7 +328,7 @@
 
 /*тень для подвала отличная от хэдера*/
 .style_title_footer {
-text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (max-width: 1001px) {
