@@ -19,9 +19,9 @@
   --title-font-weight: 700; /*заголовок толщина шрифта*/
   --title-font-size: 157px; /*размер шрифта но нужен ли из-за формулы?*/
   --main-font-size: 18px; /*размер шрифта*/
-  --color_hover: rgb(50, 49, 45, 0.4);
+  --color-hover: rgb(50, 49, 45, 0.4);
   --background-photo: url(../images/cover-image-light.png);
-  --display_rec: none;
+  --display-rec: none;
   --decor-color: #353430; /* rec и уголки*/ /*день,авто,неон*/ /*название у колонок */
 }
 
@@ -37,9 +37,9 @@
     --title-font-weight: 700; /*заголовок толщина шрифта*/
     --title-font-size: 157px; /*размер шрифта но нужен ли из-за формулы?*/
     --main-font-size: 18px; /*размер шрифта*/
-    --color_hover: rgb(50, 49, 45, 0.4);
+    --color-hover: rgb(50, 49, 45, 0.4);
     --background-photo: url(../images/cover-image-light.png);
-    --display_rec: none;
+    --display-rec: none;
     --decor-color: #353430; /* rec и уголки*/ /*день,авто,неон*/ /*название у колонок */
   }
 }

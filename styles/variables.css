@@ -13,8 +13,8 @@
   --title-font-weight: 700; /*заголовок толщина шрифта*/
   --title-font-size: 157px; /*размер шрифта но нужен ли из-за формулы?*/
   --main-font-size: 18px; /*размер шрифта*/
-  --color_hover: rgba(255, 0, 112, 0.4);
+  --color-hover: rgba(255, 0, 112, 0.4);
   --background-photo: url(../images/cover-image-dark.png);
   --decor-color: #ff0070; /* rec и уголки*/ /*день,авто,неон*/ /*название у колонок */
-  --display_rec: block;
+  --display-rec: block;
 }

@@ -30,6 +30,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone element_width">
+    
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -55,9 +56,6 @@
             </button>
           </li>
         </ul>
-        <ul class="header_decorated-zone-rec" aria-hidden="true">
-          <li class="rec"></li>
-        </ul>
       </nav>
       <h1 class="title style_title">no focus</h1>
       <!-- заголовок  и подзаголовок-->
@@ -65,10 +63,11 @@
         Что делать, когда не можешь делать ничего<br />
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
+      <span class="header_decorated-zone-rec" aria-hidden="true"></span>  
     </header>
     <main class="main element_width">
       <!-- Начинаются секции с текстом -->
-      <section class="first_question_section">
+      <section class="section_reasons_for_poor_concentration">
         <!-- 1секция -->
         <h2 class="title_question">Почему сосредоточиться так сложно</h2>
         <div class="column_answer">
@@ -105,13 +104,13 @@
           </article>
         </div>
       </section>
-      <section class="second_question_section">
         <!-- 2секция -->
-        <h2 class="title_question title_second_question">
+      <section class="section_factors_that_reduce_concentration">
+        <h2 class="title_question title_section_factors_that_reduce_concentration">
           Что снижает концентрацию внимания?
         </h2>
         <div class="row_answer">
-          <article class="card_answer second_card-answer">
+          <article class="card_answer factors_that_reduce_concentration-answer">
             <h3 class="title_answer title-decor">Многозадачность</h3>
             <p class="description_answer">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -122,7 +121,7 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </article>
-          <article class="card_answer second_card-answer">
+          <article class="card_answer factors_that_reduce_concentration-answer">
             <h3 class="title_answer title-decor">Еда</h3>
             <p class="description_answer">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -133,7 +132,7 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </article>
-          <article class="card_answer second_card-answer">
+          <article class="card_answer factors_that_reduce_concentration-answer">
             <h3 class="title_answer title-decor">Гаджеты</h3>
             <p class="description_answer">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -147,8 +146,8 @@
           </article>
         </div>
       </section>
-      <section class="third_question_section">
         <!-- 3секция -->
+      <section class="section_ways_to_concentrate">
         <h2 class="title_question">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
@@ -227,31 +226,31 @@
         <h2 class="title_answer title-decor">А можно в картинках?</h2>
         <div class="container_gallery">
           <img
-            class="sunset_image"
+            class="sunset_image style_image"
             src="./images/sunset.png"
             alt="Закат на море, в далеке виднеются горы"
             loading="lazy"
           />
           <img
-            class="ice-cream_image"
+            class="ice-cream_image style_image"
             src="./images/ice-cream.png"
             alt="В чашке с нарисованной улыбкой лежат шарики мороженого с разными эмоциями на лице"
             loading="lazy"
           />
           <img
-            class="tape_image"
+            class="tape_image style_image"
             src="./images/tape.png"
             alt="заставка рабочего стола с кассетой от видеомагнитофона"
             loading="lazy"
           />
           <img
-            class="books_image"
+            class="books_image style_image"
             src="./images/books.png"
             alt="кружка стоит на стопке с книгами"
             loading="lazy"
           />
           <img
-            class="street_image"
+            class="street_image style_image"
             src="./images/street.png"
             alt="Улица между домов"
             loading="lazy"
@@ -260,7 +259,7 @@
       </section>
     </main>
     <footer class="footer decorated-zone element_width">
-      <h2 class="style_title">focus</h2>
+      <h2 class="style_title style_title_footer">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

@@ -2,9 +2,8 @@
 /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
 .page {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: var(--font-family, sans-serif);
   color: var(--accent-color);
-  margin: 0;
   background-image: var(--background-photo);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -55,6 +54,36 @@
   border-left: 1px solid var(--decor-color);
 }
 
+/*rec*/
+.header_decorated-zone-rec::after {
+  content: "rec";
+  text-transform: uppercase;
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 139%; 
+  top: 20px;
+  right: 48px; 
+  position: absolute;
+  color: var(--decor-color);
+  display: var(--display-rec);
+}
+
+/*точка после rec*/
+.header_decorated-zone-rec::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 28px;
+  right: 29px;
+  box-shadow: 0 0 4px 2px var(--decor-color);
+  background-color: var(--decor-color);
+  inline-size: 9px;
+  block-size: 9px;
+  display: var(--display-rec);
+  
+} 
+
+
 /*секция день/авто/неон*/
 .header__theme-menu-list {
   display: grid;
@@ -93,7 +122,7 @@
 /*ховер-это наведение курсором*/
 .header__theme-menu-button:hover {
   cursor: pointer;
-  border: 1px solid var(--color_hover);
+  border: 1px solid var(--color-hover);
 }
 
 /*элемент с которым мы взаимодействуем*/
@@ -102,38 +131,7 @@
   border: 1px solid var(--decor-color);
 }
 
-.header_decorated-zone-rec {
-  list-style: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: var(--main-font-size);
-  font-weight: var(--main-font-weight);
-  line-height: 139%;
-}
 
-/*REC*/
-.rec::before {
-  content: "Rec";
-  position: absolute;
-  top: 20px;
-  right: 48px;
-  color: var(--decor-color);
-  display: var(--display_rec);
-}
-
-/*точка после REC*/
-.rec::after {
-  content: "";
-  position: absolute;
-  border-radius: 100%;
-  top: 28px;
-  right: 29px;
-  box-shadow: 0 0 4px 2px var(--decor-color);
-  background-color: var(--decor-color);
-  inline-size: 9px;
-  block-size: 9px;
-  display: var(--display_rec);
-}
 
 /*заголовок no focus в header*/
 .title {
@@ -173,7 +171,7 @@
 }
 
 /*первая секция*/
-.first_question_section {
+.section_reasons_for_poor_concentration {
   display: grid;
   grid-template-columns: minmax(236px, 315px) minmax(472px, 649px);
   gap: 20px;
@@ -211,7 +209,7 @@
 
 /*описание ответа*/
 .description_answer {
-  font-weight: var(--main-font-size);
+  font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
   line-height: 130%;
   color: var(--text-color);
@@ -241,7 +239,7 @@
 }
 
 /*вторая секция*/
-.second_question_section {
+.section_factors_that_reduce_concentration {
   margin-block-start: 80px;
   display: flex;
   flex-direction: column;
@@ -249,7 +247,7 @@
 }
 
 /*заголовок второй секции*/
-.title_second_question {
+.title_section_factors_that_reduce_concentration {
   inline-size: 30%;
 }
 
@@ -261,7 +259,7 @@
 }
 
 /*третья секция*/
-.third_question_section {
+.section_ways_to_concentrate {
   margin-block-start: 80px;
   display: grid;
   grid-template-columns: minmax(236px, 315px) minmax(472px, 649px);
@@ -293,42 +291,31 @@
   gap: 20px;
 }
 
+/*общие стили для всех картинок*/
+.style_image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover; 
+}
+
 /*закат над водой*/
 .sunset_image {
   grid-column: span 2;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
 }
 
 /*мороженко*/
 .ice-cream_image {
   grid-row: span 2;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
 }
 
 /*касета*/
 .tape_image {
   grid-row: span 2;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
 }
 
-/*книжки*/
-.books_image {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-}
 /*улица*/
 .street_image {
   grid-column: span 2;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
 }
 
 /* focus*/
@@ -343,6 +330,11 @@
   line-height: 83%;
 }
 
+/*тень для подвала отличная от хэдера*/
+.style_title_footer {
+text-shadow: 2px 2px 0 var(--accent-color);
+}
+
 @media (max-width: 1001px) {
   .row_answer {
     grid-template-columns: none;
@@ -350,7 +342,7 @@
     gap: 20px;
   }
 
-  .second_card-answer {
+  .factors_that_reduce_concentration-answer {
     inline-size: 100%;
   }
 }
@@ -387,12 +379,12 @@
 }
 
 @media (max-width: 745px) {
-  .first_question_section {
+  .section_reasons_for_poor_concentration {
     grid-template-columns: none;
     grid-template-rows: 47px auto;
   }
 
-  .third_question_section {
+  .section_ways_to_concentrate {
     grid-template-columns: none;
     grid-template-rows: 47px auto;
   }
@@ -406,19 +398,19 @@
 }
 
 @media (max-width: 500px) {
-  .first_question_section {
+  .section_reasons_for_poor_concentration {
     margin-block-start: 40px;
   }
 
-  .second_question_section {
+  .section_factors_that_reduce_concentration {
     margin-block-start: 50px;
   }
 
-  .title_second_question {
+  .title_section_factors_that_reduce_concentration {
     inline-size: 100%;
   }
 
-  .third_question_section {
+  .section_ways_to_concentrate {
     gap: 40px;
   }
 
@@ -462,21 +454,22 @@
     min-height: 668px;
   }
 
+  .decorated-zone::before {
+    bottom: 10px;
+    left: 10px;
+  }
+
   .decorated-zone::after {
     top: 10px;
     right: 10px;
   }
 
-  .decorated-zone::before {
-    bottom: 10px;
-    left: 10px;
-  }
-  .rec::before {
+  .header_decorated-zone-rec::after {
     top: 10px;
     right: 38px;
   }
 
-  .rec::after {
+  .header_decorated-zone-rec::before {
     top: 18px;
     right: 19px;
   }
@@ -496,7 +489,7 @@
     margin-block-start: 10px;
   }
 
-  .third_question_section {
+  .section_ways_to_concentrate {
     margin-block-start: 51px;
   }
 
