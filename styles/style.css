@@ -102,7 +102,7 @@
   border: none;
   text-transform: lowercase;
   line-height: 100%;
-  padding: 0px 13px;
+  padding: 0 13px;
 }
 
 /*следует придерживаться определённого порядка в объявлении стилей:
@@ -215,7 +215,7 @@
 .link {
   text-decoration: none;
   color: var(--text-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 /*следует придерживаться определённого порядка в объявлении стилей:
@@ -243,7 +243,7 @@
 }
 
 /*заголовок второй секции*/
-.title_section_factors_that_reduce_concentration {
+.section-title {
   inline-size: 30%;
 }
 
@@ -337,10 +337,6 @@
     grid-template-rows: repeat(min-content, 1fr);
     gap: 20px;
   }
-
-  .factors_that_reduce_concentration-answer {
-    inline-size: 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -360,6 +356,19 @@
 
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .section_reasons_for_poor_concentration {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(auto, 236px) minmax(auto, 472px);
+  }
+
+  .section_ways_to_concentrate {
+    margin-block-start: 80px;
+    display: grid;
+    grid-template-columns: minmax(auto, 236px) minmax(auto, 472px);
+    gap: 20px;
   }
 
   .container_gallery {
@@ -402,7 +411,7 @@
     margin-block-start: 50px;
   }
 
-  .title_section_factors_that_reduce_concentration {
+  .section-title {
     inline-size: 100%;
   }
 
